@@ -1,0 +1,91 @@
+* {
+    outline: purple solid;
+}
+
+.header {
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 20px 10px;
+    height: 33vh;
+}
+
+
+/*make image responsive */
+
+.responsive {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+
+
+/*container for the responsive image*/
+
+.header-img {
+    border: solid red;
+    position: relative;
+    height: 25vh;
+}
+
+
+/*centers header text*/
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    color: blue;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*arranges "a" elements without any bullets and makes stick to the top when page scrolls down */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+
+/*Add gray border to all but last item*/
+
+li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+
+/*makes navbar contents centered and the entire navbar horizontal*/
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+}
+
+
+/*Change the link color on hover*/
+
+li a:hover {
+    background-color: blueviolet;
+    color: goldenrod;
+}
+
+
+/*Let user know which page they are currently on*/
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+@media screen and (max-width:425px) {}
