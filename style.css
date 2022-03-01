@@ -1,12 +1,18 @@
-* {
-    outline: purple solid;
+/*added a pagewrapper so that it could make things easier to calculate.
+trying to have a sort of column-collage wtiht the products on either side of the text.
+*/
+
+.pagewrapper {
+    width: 100vw;
+    height: 100vh;
+    border: solid yellow;
 }
 
 .header {
     overflow: hidden;
     background-color: #f1f1f1;
-    padding: 20px 10px;
-    height: 33vh;
+    padding: 0px;
+    height: auto;
 }
 
 
@@ -22,7 +28,6 @@
 /*container for the responsive image*/
 
 .header-img {
-    border: solid red;
     position: relative;
     height: 25vh;
 }
@@ -59,6 +64,8 @@ ul {
 li {
     float: left;
     border-right: 1px solid #bbb;
+    margin: 0;
+    width: 49.59%;
 }
 
 
@@ -70,6 +77,8 @@ li a {
     text-align: center;
     padding: 10px;
     background-color: #333;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 
@@ -80,12 +89,25 @@ li a:hover {
     color: goldenrod;
 }
 
-
-/*Let user know which page they are currently on*/
-
-.active {
-    background-color: #04AA6D;
-    color: white;
+.main-page {
+    width: 100%;
+    height: auto;
+    border: solid red;
+    background-color: black;
 }
 
-@media screen and (max-width:425px) {}
+.product-container {
+    width: 100%;
+    display: flexbox;
+    flex-direction: column;
+}
+
+.product-img {
+    width: 20%;
+    border-right: 5px solid #bbb;
+}
+
+.product-text {
+    width: 20%;
+    color: white;
+}
