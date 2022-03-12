@@ -1,15 +1,15 @@
-/*Trying to make the center image transparent when you hover over it so that the text shows
+/*TryING to create the mobile version
 */
 
 .pagewrapper {
     width: 100vw;
     height: 644px;
-    border: solid yellow;
+    background-color: black;
 }
 
-.header {
+header {
     overflow: hidden;
-    background-color: #f1f1f1;
+    background-color: black;
     padding: 0px;
     height: auto;
 }
@@ -34,13 +34,13 @@
 
 /*centers header text*/
 
-.header-text {
+h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 150px;
-    color: blue;
+    color: blanchedalmond;
     padding: 0;
     margin: 0;
 }
@@ -75,7 +75,7 @@ li a {
     color: white;
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: black;
     font-size: 20px;
     margin-right: 10px;
 }
@@ -84,14 +84,13 @@ li a {
 /*Change the link color on hover*/
 
 li a:hover {
-    background-color: blueviolet;
+    background-color: black;
     color: goldenrod;
 }
 
 .main-page {
     width: 100%;
     height: 429px;
-    border: solid red;
     background-color: black;
 }
 
@@ -108,6 +107,8 @@ li a:hover {
 .product-img {
     width: 20%;
     height: auto;
+    border-right: 1px solid black;
+    margin: 0;
 }
 
 .centerpiece-img {
@@ -116,10 +117,14 @@ li a:hover {
     height: 100%;
     object-fit: cover;
     opacity: 1;
+    transition: 2.0s;
 }
 
-.centerpiece-img :hover {
-    opacity: 0.5;
+
+/* originally wrote ".centerpiece-img :hover" and that tiny space between img and :hover fucked me hard for a good 15 mins. Apparently it's all one word */
+
+.centerpiece-img:hover {
+    opacity: 0.3;
 }
 
 .product-img p {
